@@ -3,8 +3,8 @@
 	<head>
 	<script src= "https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 	<script src= "https://cdn.rawgit.com/jeromeetienne/AR.js/1.4.9/aframe/build/aframe-ar.js"></script>
-	< meta name= "apple-mobile-web-app-capable" content= "yes" >
-< script >
+	<meta name= "apple-mobile-web-app-capable" content= "yes">
+<script>
 AFRAME.registerComponent( 'toggle-on-tap' , {
 init: function () {
 this .onClick = this .onClick.bind( this );
@@ -26,8 +26,8 @@ video.paused ? video.play() : video.pause();
 	<body style="margin: 0; overflow: hidden;">
 	<a-scene embedded arjs="detectionMode : mono_and_matrix; matrixCodeType: 3x3;" vr-mode-ui="enabled: false">
 	<a-assets>
-		< video id= "TrueLoveRestraint" playsinline webkit-playsinline autoplay loop= "true"
-src= "TrueLoveRestraint.mp4" ></ video >
+		<video id= "TrueLoveRestraint" playsinline webkit-playsinline autoplay loop= "true"
+src= "TrueLoveRestraint.mp4" ></ video>
 	</a-assets>
 		<a-marker type="barcode" value="3">
 		<a-image src="289225.jpeg"></a-image>
